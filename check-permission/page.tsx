@@ -14,7 +14,7 @@ const Page = () => {
   });
   const [error, setError] = useState(null);
   const [permissionsChecked, setPermissionsChecked] = useState(false);
-  const videoRef = useRef(null);
+   const videoRef = useRef<HTMLVideoElement>(null);
   const router = useRouter();
 
   const checkPermissions = async () => {
